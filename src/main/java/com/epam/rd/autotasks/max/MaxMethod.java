@@ -2,6 +2,11 @@ package com.epam.rd.autotasks.max;
 
 public class MaxMethod {
     public static int max(int[] values) {
-        throw new UnsupportedOperationException();
+
+        int m = Integer.MIN_VALUE;
+
+        for(int x:values) m = Math.max(m,x);
+
+        return m;
     }
 }
